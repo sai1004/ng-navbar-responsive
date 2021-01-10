@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HealthPageComponent } from './health-page/health-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
 import { LifeStylePageComponent } from './life-style-page/life-style-page.component';
 import { NewsPageComponent } from './news-page/news-page.component';
 import { SportsPageComponent } from './sports-page/sports-page.component';
 import { TechPageComponent } from './tech-page/tech-page.component';
 
 const routes: Routes = [
+    {
+        path: '',
+        component: HomePageComponent,
+    },
     {
         path: 'news',
         component: NewsPageComponent,

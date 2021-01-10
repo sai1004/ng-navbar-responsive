@@ -16,8 +16,14 @@
     <div fxHide.lt-sm>
         <div fxLayout="row">
             <ng-container *ngFor="let item of menusList">
-                <div fxFlex="20">
-                    <a> {{ item.name }} </a>
+                <div
+                    fxFlex="20"
+                    [routerLink]="item.path"
+                    routerLinkActive="active__route__bigscreen"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    Align="center"
+                >
+                    <a> {{ item.name | titlecase }} </a>
                 </div>
             </ng-container>
         </div>

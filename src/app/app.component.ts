@@ -35,9 +35,5 @@ export class AppComponent {
             name: 'sports',
             path: '/sports',
         },
-        {
-            name: 'jokes',
-            path: '/jokes',
-        },
     ];
 }
